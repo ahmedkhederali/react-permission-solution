@@ -1,10 +1,10 @@
 import React from 'react'
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { PermissionsProvider } from './context'
-import { Can } from './Can'
-import { usePermissions } from './usePermissions'
-import { withPermission } from './withPermission'
+import { PermissionsProvider } from '../context'
+import { Can } from '../Can'
+import { usePermissions } from '../usePermissions'
+import { withPermission } from '../withPermission'
 
 // ─── helpers ────────────────────────────────────────────────────────────────
 

@@ -10,7 +10,7 @@ import {
   buildPermissionString,
   normalizePermission,
   matchPermission,
-} from './utils'
+} from '../utils'
 
 describe('normalizePermission', () => {
   it('lowercases and trims', () => {

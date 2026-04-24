@@ -1,15 +1,15 @@
-# react-permissions
+# react-permissions-solution
 
 > Lightweight, declarative role-based and permission-based UI rendering for React.  
 > TypeScript-first. Zero dependencies. Full wildcard support. Flexible by design.
 
-[![npm version](https://img.shields.io/npm/v/react-permissions)](https://www.npmjs.com/package/react-permissions)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/react-permissions)](https://bundlephobia.com/package/react-permissions)
-[![license](https://img.shields.io/npm/l/react-permissions)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/react-permissions-solution)](https://www.npmjs.com/package/react-permissions-solution)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/react-permissions-solution)](https://bundlephobia.com/package/react-permissions-solution)
+[![license](https://img.shields.io/npm/l/react-permissions-solution)](./LICENSE)
 
 ---
 
-## Why react-permissions?
+## Why react-permissions-solution?
 
 Every app with users has roles. Every app with roles ends up with code like this scattered everywhere:
 
@@ -21,18 +21,18 @@ Every app with users has roles. Every app with roles ends up with code like this
 
 This approach breaks down fast — logic is duplicated, hard to trace, and impossible to change safely.
 
-`react-permissions` gives you a **single source of truth** for access control, a **declarative API** to use it, and the **flexibility** to plug in any backend.
+`react-permissions-solution` gives you a **single source of truth** for access control, a **declarative API** to use it, and the **flexibility** to plug in any backend.
 
 ---
 
 ## Installation
 
 ```bash
-npm install react-permissions
+npm install react-permissions-solution
 # or
-yarn add react-permissions
+yarn add react-permissions-solution
 # or
-pnpm add react-permissions
+pnpm add react-permissions-solution
 ```
 
 **Peer dependencies:** React 17+
@@ -57,7 +57,7 @@ export const ROLES = {
 
 ```tsx
 // App.tsx
-import { PermissionsProvider } from 'react-permissions'
+import { PermissionsProvider } from 'react-permissions-solution'
 import { ROLES } from './permissions.config'
 
 function App() {
@@ -77,7 +77,7 @@ function App() {
 ### 3. Use it anywhere
 
 ```tsx
-import { Can, usePermissions } from 'react-permissions'
+import { Can, usePermissions } from 'react-permissions-solution'
 
 // Component-based
 <Can do="delete" on="posts">
@@ -277,7 +277,7 @@ const canModerate = canAny(['edit', 'delete', 'approve'], 'posts')
 HOC for protecting entire pages or sections.
 
 ```tsx
-import { withPermission } from 'react-permissions'
+import { withPermission } from 'react-permissions-solution'
 
 // Protect by permission
 const AdminPage = withPermission({
@@ -329,7 +329,7 @@ import {
   mergePermissions,
   buildRolePermissions,
   buildPermissionString,
-} from 'react-permissions'
+} from 'react-permissions-solution'
 ```
 
 ### `mergePermissions(...permissionSets)`
@@ -448,7 +448,7 @@ const ReviewPage = requirePermission('approve:posts')(ReviewDashboard)
 ### Pattern 5 — Outside React (e.g. API calls)
 
 ```ts
-import { hasPermission } from 'react-permissions'
+import { hasPermission } from 'react-permissions-solution'
 
 // in your API service layer
 async function deletePost(id: string, userPermissions: string[]) {
@@ -489,7 +489,7 @@ import type {
   PermissionsProviderProps,
   CanProps,
   WithPermissionOptions,
-} from 'react-permissions'
+} from 'react-permissions-solution'
 ```
 
 ---

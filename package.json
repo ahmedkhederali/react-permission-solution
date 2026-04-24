@@ -1,5 +1,5 @@
 {
-  "name": "react-permissions",
+  "name": "react-permissions-solution",
   "version": "1.0.0",
   "description": "Lightweight, declarative role-based and permission-based UI rendering for React. TypeScript-first, zero dependencies.",
   "keywords": [
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ahmedkhederali/react-permission"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
